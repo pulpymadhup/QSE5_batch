@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        // console.log(true && false)
+        // console.log(true || false)
+
+        // let a=10;
+        // let b =2;
+
+        // console.log(a==10 && a<b);
+        // console.log(a==10 || a<b); 
+
+        // console.log("hi" && "hello");
+        // console.log("hii" || "hello");
+
+        // console.log(undefined && "hello");
+        // console.log(undefined || " ");
+
+        // console.log(undefined || "hello");
+        // console.log(undefined || null);\
+
+        // ----------------------------------------------------------------------------------------
+
+        // console.log("hi" && false && 100) // false
+        // console.log("hi" && 1 && undefined && 100 ) // undefined 
+
+        // console.log(100 && "hello"); // "hello"
+        // console.log(100 && ""); // ""
+        // console.log(null && "hi"); //null
+        // console.log(null && NaN) //null
+
+        console.log(null==undefined || false ==0)//t
+        console.log("hi"!="Hi" || null ==0)//t
+        console.log(null!==undefined || "hi">"Hi")//t
+        console.log(100 != "100" || 'hi' ) //hi
+
+        console.log(null || 100) //100
+        console.log(NaN || undefined) //undefined
+        console.log(" " || "") // " "
+        console.log(false || 0) // 0
+
+        // console.log(!true);
+        // console.log(!false);
+
+        console.log(!"hi") //f
+        console.log(!0 +1) //2
+        console.log(!(0 +1)) //f
+
+        console.log(!"hi" + null)//0
+
+        // let a = 5;
+        // a++;
+        // let b = ++a >= 7 || a++;
+        // b--;
+        // --a;
+        // console.log(a-- + --b) //5
+
+        let a = 5;
+        --a;
+        let b = ++a >= 7 && a++;
+        b--;
+        --a;
+        console.log(a,b) // 4,-1 
+
+        // Assignment 1
+
+        // let username = "sam123";
+        // let passward = 1234;
+        // let email = "sam@gmail.com";
+
+        // let promptusername = prompt("give username: ");
+        // let promptemail = prompt("give Email: ");
+        // let promptpassward = Number(prompt("Passward"));
+        
+
+        // if(email === promptemail|| username === promptusername && passward === promptpassward){
+        //     console.log("login succesfull");
+
+        // }
+        // else{
+        //     console.log("login again");
+        // }
+
+        // Assignment 2 
+
+        // let isLoggedIn = null;
+
+        // let promptLogg = prompt("what's the loggin status :")
+
+        // if(promptLogg == true){
+        //  alert("login succussfull"); 
+        // }else{
+        //     alert("login failed");
+        // }
+
+        // assignment 3
+
+        // let isLoggedIn = (prompt("Login true or false:"));
+        // let hasPaidSubscription = (prompt("Subscripton true or flase:"));
+
+        // if(isLoggedIn=="true" && hasPaidSubscription=="true"){
+        //     console.log(true);
+        // }
+        // else{
+        //     console.log(false)
+        // }
+
+        // assignment 4
+
+        // let freeShipping = false;
+        // let cartTotal = Number(prompt("Total value:"));
+        // let isVIP = prompt("VIP, true or false :");
+
+        // if(cartTotal>50 || isVIP == "true"){
+        //     freeShipping = true;
+        // }
+
+        // console.log(`Free Shipping ${freeShipping}`);
+
+        // let a = Symbol("user");
+        // let b = Symbol("user");
+        // console.log(a == b);
+
+        // console.log(!true || (false && true));
+
+        // let x = 5 ;
+
+        // console.log(x>3 && "Active");
+
+        // let user ="";
+        // console.log(user || "annonumous user");
+        // console.log(1 && 2 && 3 );
+        // console.log(false || (true && false) || !false);
+
+        
+
+
+
+    </script>
+</body>
+</html>

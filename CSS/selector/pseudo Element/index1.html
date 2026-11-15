@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        p::first-letter{
+            color: red;
+            font-size: 50px;
+        }
+        p::first-line{
+            color:green;
+            font-size: 25px;
+        }
+        p::selection{
+            background-color: yellow;
+            color: orange;
+        }
+        p::before{
+            content: "welcome";
+            /* content: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSRiHCsxtVj9aEyZuJNQGunLgGHNPbyGhZdTuYeAbr-glehbB4V8CujxCzF&s=10); */
+        }
+        p::after{
+            content: "Thankyou";
+            content: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSRiHCsxtVj9aEyZuJNQGunLgGHNPbyGhZdTuYeAbr-glehbB4V8CujxCzF&s=10);
+        }
+        p::marker{
+            color:red;
+            font-size: 30px;
+        }
+
+    </style>
+</head>
+
+<body>
+    <p>
+        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quas accusantium, repudiandae sapiente distinctio
+        mollitia error ut unde ratione illo nihil animi totam provident magnam incidunt quia soluta. Corporis soluta
+        odit saepe facere esse, expedita sapiente molestiae eius quo qui fuga perspiciatis numquam tempora sequi
+        explicabo dolore voluptas quis sed. Tempora reiciendis maiores accusamus doloribus vel, laborum dolorum ipsum
+        quos, nihil fuga molestiae nisi ipsam, magnam deserunt dolore tenetur saepe voluptatibus officia dolorem
+        dignissimos quis libero laudantium praesentium! Officiis cumque pariatur eius beatae voluptatum praesentium
+        illo, molestias ab itaque quia deserunt nobis commodi in iusto ipsum debitis! Illum debitis ipsam quo.
+    </p>
+</body>
+
+</html>

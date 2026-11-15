@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <h1>Type Casting</h1>
+    <script>
+        // type conversion(explicit) 
+        // Number()
+
+        // console.log(Number(100)); // 100
+        // console.log(Number("Hello")); // NaN
+        // console.log(Number(true)); //1
+        // console.log(Number(false)); //0
+        // console.log(Number(null)); //0
+        // console.log(Number(undefined)); //NaN
+        // console.log(Number(BigInt(23456789))); // 23456789
+        // console.log(Number(Symbol(10))); //NaN
+        // console.log(Number(12.567)); //12.567
+        // console.log(Number("12fghjk")); //NaN
+
+        // parseInt()
+
+        // console.log(parseInt("100")); //100
+        // console.log(parseInt("99.567")); //99
+        // console.log(parseInt("99fghj")); //99 
+        // console.log(parseInt(true)); //NaN
+        // console.log(parseInt(false)); //NaN
+        // console.log(parseInt(null)); //NaN
+        // console.log(parseInt(undefined)); //NaN
+        // console.log(parseInt(BigInt(234.56789))); //error
+        // console.log(parseInt(Symbol(10))); //error
+
+        // parseFloat() 
+
+        // console.log(parseFloat(100)) //100
+        // console.log(parseFloat("99.45fghj")) // 99.45
+        // console.log(parseFloat("99gh.678")) //99
+        // console.log(parseFloat(true))//NaN
+        // console.log(parseFloat(false)) //NaN
+        // console.log(parseFloat(null)) //NaN
+        // console.log(parseFloat(undefined)) //NaN
+        // console.log(parseFloat(BigInt(456.7890))) //error
+        // console.log(parseFloat(Symbol(10))) // error
+
+        // string()
+
+        // console.log(parseFloat(100)); //100
+        // console.log(parseFloat(100.78)); //100.78
+        // console.log(parseFloat(true)); //true
+        // console.log(parseFloat(false)); //false
+        // console.log(parseFloat(null)); //null
+        // console.log(parseFloat(undefined)); //undefined
+        // console.log(parseFloat(BigInt(100))); //100
+        // console.log(parseFloat(Symbol(10))); //Symbol(10)
+        // console.log(parseFloat(100)); //100
+
+        // Boolean 
+        // falsy values
+
+        // console.log(Boolean(0)) //false
+        // console.log(Boolean(null)) //false
+        // console.log(Boolean(undefined)) //false
+        // console.log(Boolean("")) //false
+        // console.log(Boolean(false)) //false
+        // console.log(Boolean(NaN)) //false
+        // console.log(Boolean(BigInt(0))) //false
+
+        // // truthy values 
+
+        // console.log(Boolean("hello")) //true
+        // console.log(Boolean("100")) //true
+        // console.log(Boolean("false")) //true
+        // console.log(Boolean(true)) //true
+        // console.log(Boolean(21.67)) //true
+        //  console.log(Boolean(" ")) //true
+       
+        // Type coercion(implicit)
+        let a = 100; //number
+        let b = 'hello' //string
+        console.log(a+b) // 100hello -->string
+
+        let c =true ; //boolean
+        let d = null; //obj
+        console.log(c+d) //1 -->number
+
+        let e = true; //boolean
+        let f = 10 //number
+        console.log(e+f) //11
+
+        
+    </script>
+</body>
+
+</html>
