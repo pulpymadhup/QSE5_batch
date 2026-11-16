@@ -1,0 +1,40 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    font-family: helvetica;
+}
+marquee {
+    padding: 10px ;
+    box-sizing: border-box;
+    color: white;
+}
+.Navbar{
+    margin: 20px ;
+    display: flex;
+    flex-direction: row ;
+    justify-content: center;
+    align-items: center;
+}
+.Navbar span{
+    padding: 0px 20px;
+}
+.Navbar input{
+    width: 300px;
+    height: 20px;
+    border: none;
+    outline: gray;
+    padding: 10px;  
+}
+.Navbar button{
+    background-color: whitesmoke;
+    padding: 10px;
+    border: 1px solid transparent;
+    border-radius: 10px;
+}
+.Navbar button:hover{
+    background-color: purple;
+    color: white;
+    padding: 10px;
+    border: 1px solid transparent;
+    border-radius: 10px;
+}
