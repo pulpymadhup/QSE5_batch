@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <!-- purchase - discount calculator  -->
+    <script>
+        let purchase = Number(prompt("Write the amount of purchase:"))
+        let discount = 0;
+
+        if (purchase >= 10000) {
+            discount = 0.5;
+            console.log(`Your purchase is ${purchase}, your discount is ${discount * 100}% and your bill will be ${purchase - purchase * discount}. `)
+        }
+        else if (purchase >= 5000) {
+            discount = 0.3;
+            console.log(`Your purchase is ${purchase}, your discount is ${discount * 100}% and your bill will be ${purchase - purchase * discount}. `)
+        }
+        else if (purchase >=3000){
+            discount = 0.2;
+            console.log(`Your purchase is ${purchase}, your discount is ${discount * 100}% and your bill will be ${purchase - purchase * discount}. `)
+        }
+        else if(purchase>=1000){
+            discount=0.1;
+            console.log(`Your purchase is ${purchase}, your discount is ${discount * 100}% and your bill will be ${purchase - purchase * discount}. `)
+        }
+        else{
+            console.log(`Your purchase is ${purchase}, your discount is ${discount * 100}% and your bill will be ${purchase - purchase * discount}. `)
+        }
+    </script>
+</body>
+
+</html>

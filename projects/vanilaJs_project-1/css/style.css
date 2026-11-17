@@ -12,7 +12,6 @@ marquee {
     margin: 20px ;
     display: flex;
     flex-direction: row ;
-    justify-content: center;
     align-items: center;
 }
 .Navbar span{
@@ -23,18 +22,21 @@ marquee {
     height: 20px;
     border: none;
     outline: gray;
-    padding: 10px;  
+    padding: 10px; 
+    margin: 0px auto 0px ; 
 }
 .Navbar button{
-    background-color: whitesmoke;
-    padding: 10px;
+    background-color: black;
+    padding: 10px 20px;
+    color: white;
     border: 1px solid transparent;
-    border-radius: 10px;
+    border-radius: 30px;
+    font-weight: 300;
 }
 .Navbar button:hover{
     background-color: purple;
-    color: white;
-    padding: 10px;
-    border: 1px solid transparent;
-    border-radius: 10px;
+    
+}
+.fa-cart-shopping{
+    margin-left: auto;
 }

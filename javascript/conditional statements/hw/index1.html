@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!-- Electric bill calculator  -->
+    <script>
+        let unitConsumed = Number(prompt("Give number of units consumed:"));
+        let bill = 0 ;
+        let updatedUnit = null;
+
+        if(unitConsumed>=300){
+            updatedUnit = unitConsumed-300;
+            bill = 50*2 + 100*3 + 100*5 +updatedUnit*7;
+        }
+        else if(unitConsumed>=200){
+            updatedUnit = unitConsumed-200;
+            bill =  50*2 + 100*3 + updatedUnit*5;
+        }
+        else if(unitConsumed>=100){
+            updatedUnit = unitConsumed-100;
+            bill = 50*2 + updatedUnit*3;
+        }
+        else if(unitConsumed>=50){
+            updatedUnit = unitConsumed-50;
+            bill = updatedUnit*2;
+        }
+        
+        console.log(bill)
+    </script>
+</body>
+</html>

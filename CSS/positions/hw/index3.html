@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.3.1/css/all.css"
+        integrity="sha512-x9WwyMYBnlXMNQ6kQ/Lyzu1NqIhLQKL5Oq6xByfXuRj7s9CskyCbLv/1IjqzJmXwFXWr0ov6jBV7Qbc0hh9nHg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            font-family: fantasy;
+        }
+
+        main {
+            margin: 100px auto;
+            width: 300px;
+            border-radius: 80px;
+            box-shadow: 5px 5px 5px 2px gray;
+            border-radius: 20px;
+            overflow: hidden;
+        }
+
+        .root-div {
+            border-radius: 50%;
+        }
+
+        .background-top {
+            background: linear-gradient(135deg, #4facfe 0%, #6a5af9 50%, #d16ba5 100%);
+            position: static;
+        }
+
+        img {
+            width: 150px;
+            border-radius: 50%;
+            border: solid 10px white;
+            position: relative;
+            top: 80px;
+            left: 60px;
+        }
+
+        .background-bottom {
+            padding: 10px;
+            box-sizing: border-box;
+        }
+
+        p {
+            text-align: justify;
+            padding: 5px 15px;
+        }
+
+        h1 {
+            padding: 80px 60px 0px;
+            box-sizing: content-box;
+        }
+
+        footer {
+            padding: 20px 40px;
+            box-sizing: border-box;
+        }
+
+        i {
+            padding: 10px;
+        }
+    </style>
+</head>
+
+<body>
+    <main>
+        <div class="root-div">
+            <div class="background-top">
+                <img src="data:image/jpeg;base64,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"
+                    alt="">
+            </div>
+            <div class="background-bottom">
+                <h1>John Snow</h1>
+                </p>
+                <br>
+                <p>
+                    Jon Snow,[13] born Aegon Targaryen, is the son of Lyanna Stark and Rhaegar Targaryen, the late
+                    Prince of Dragonstone. From infancy, 
+                <br>
+                <footer>
+                    <i class="fa-brands fa-x-twitter fa-lg"></i>
+                    <i class="fa-brands fa-instagram fa-lg"></i>
+                    <i class="fa-brands fa-whatsapp fa-lg"></i>
+                    <i class="fa-brands fa-linkedin-in fa-lg"></i>
+                </footer>
+            </div>
+        </div>
+
+
+
+    </main>
+</body>
+
+</html>

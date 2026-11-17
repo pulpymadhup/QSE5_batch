@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!-- salary Bonus calculator  -->
+    <script>
+        let sal = Number(prompt("enter your Salary :"));
+        let exp = Number(prompt("Enter your Work Experience: "));
+        let bonus = 0;
+
+        if(exp>=5){
+            bonus=0.3;
+            console.log(`You bonus is ${bonus*sal} and your compensation is ${sal+sal*bonus}.`)
+        }
+        else if(exp>=3){
+            bonus=0.2;
+            console.log(`You bonus is ${bonus*sal} and your compensation is ${sal+sal*bonus}.`)
+        }
+        else if(exp>=1){
+            bonus=0.1;
+            console.log(`You bonus is ${bonus*sal} and your compensation is ${sal+sal*bonus}.`);
+        }
+        else{
+            console.log(`You bonus is ${bonus*sal} and your compensation is ${sal+sal*bonus}.`)
+        }
+    </script>
+</body>
+</html>
