@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!-- Check whether a number id pallindrome or not  -->
+     <script>
+        let num = Number(prompt("give number: "))
+        let check = num;
+        let rev = 0;
+        while(num>0){
+            rev = num%10 +rev*10;
+            num = parseInt(num/10);
+        }
+        console.log(rev)
+        if(rev==check){
+            console.log(`${check} is pallindrome number.`);
+        }
+        else{
+             console.log(`${check} is not pallindrome number.`);
+        }
+        
+    </script>
+</body>
+</html>

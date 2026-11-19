@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        // assignment-1
+
+        // write a program for printing number of even number in range 
+
+
+        let start = Number(prompt("Give starting range number: "));
+        let end =Number(prompt("Give the ending range number: "));
+        let j = 0;
+
+        for(let i = start ; i<=end ;i++){
+            
+            if(i%2==0 )continue;
+                 j++;
+        }
+        console.log(j)
+
+        // assignment-2
+
+        // write the program to do the sum of first 50 odd numbers 
+
+        // let sum = 0;
+        // for(let i = 0 ; i<50 ;i++){
+        //     if(i%2==0) continue;
+        //     sum = sum+i;
+        // }
+        // console.log(sum)
+
+        // Assignment-3
+
+        // write multiplication of given number 
+
+        // let num = Number(prompt("Give Number: "));
+
+        // for(let i = 1;i<=10 ;i++){
+        //     console.log(`${num}*${i}=${num*i}.`)
+        // }
+
+        // write squares of number from 1 to 20
+
+        // for(let i=1 ; i<=20 ;i++){
+        //     console.log(`sqrare of ${i} is ${i*i}`);
+        // }
+
+        // Assignment-4
+
+        // write cube of numbers from 1 to 10
+
+        for(let i=1 ; i<=10 ;i++){
+            console.log(`cube of ${i} is ${i**3}`);
+        }
+    </script>
+</body>
+</html>
