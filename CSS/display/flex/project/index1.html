@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .container{
+            display: flex;
+            height: 100vh;
+            /* border: 2px solid black; */
+            flex-flow: row wrap;
+            gap: 20px;
+            padding: 20px;
+            justify-content: center;
+            align-content: end;
+        }
+        
+        img{
+            width: 200px;
+            height: 200px;
+            overflow: hidden;
+            border-radius: 10px;
+        }
+        .items{
+            display: flex;
+            flex-flow: column wrap;
+            
+        }
+        span{
+            text-align: center;
+        }
+        .price{
+            font-weight: bolder;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="items"><img src="de.jpg" alt=""> <span class="price">Just $999</span><span class="price-desc">Biggest price drop</span></div>
+        <div class="items"><img src="de.jpg" alt=""><span class="price">Just $999</span><span class="price-desc">Biggest price drop</span></div>
+        <div class="items"><img src="de.jpg" alt=""><span class="price"><del>$1499</del> $999</span><span class="price-desc">Biggest price drop</span></div>
+        <div class="items"><img src="de.jpg" alt=""><span class="price">Just $999</span><span class="price-desc">Biggest price drop</span></div>
+        <div class="items"><img src="de.jpg" alt=""><span class="price">Just $999</span><span class="price-desc">Biggest price drop</span></div>
+        <div class="items"><img src="de.jpg" alt=""><span class="price">Just $999</span><span class="price-desc">Biggest price drop</span></div>
+    </div>
+</body>
+</html>

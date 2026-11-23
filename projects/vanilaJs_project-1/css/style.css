@@ -3,16 +3,29 @@
     padding: 0px;
     font-family: helvetica;
 }
+
+/* Announcement */
+.Announcement-bar{
+    display: flex;
+    flex-flow: row wrap;
+}
+
 marquee {
     padding: 10px ;
     box-sizing: border-box;
     color: white;
 }
+
+/* Navbar  */
+
 .Navbar{
     margin: 20px ;
     display: flex;
     flex-direction: row ;
     align-items: center;
+    justify-content: center;
+    box-sizing: content-box;
+    font-weight: 600;
 }
 .Navbar span{
     padding: 0px 20px;
@@ -40,3 +53,101 @@ marquee {
 .fa-cart-shopping{
     margin-left: auto;
 }
+
+/* Hero section  */
+
+.Hero-section{
+    width: 95%;
+    background-color: #00105B;
+    height: 450px;
+    border-radius: 10px;
+    margin: 20px auto;
+    position: relative;
+
+}
+
+/* Hero content section  */
+
+.Hero-section .hero-content{
+    height: 380px;
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0px 50px;
+    color: white;
+}
+
+.Hero-section .hero-content .text-content button{
+    outline: none;
+    border: none;
+    background-color: #CE4F2F;
+    height: 3rem;
+    width: 6rem;
+    border-radius: 10px;
+    color: white;
+    font-weight: bolder;
+    margin: 20px auto;
+}
+.Hero-section .hero-content .text-content button:hover{
+    outline: none;
+    border: none;
+    background-color: white;
+    height: 3rem;
+    width: 6rem;
+    border-radius: 10px;
+    color: black;
+    font-weight: bolder;
+    margin: 20px auto;
+}
+
+/* Hero image section  */
+
+.Hero-section .hero-content .product-image img{
+    width: 200px;
+    border-radius: 20px;
+}
+
+/* Hero control section  */
+
+.Hero-section .slider-control .slider-dots{
+    display: flex;
+    gap: 10px;
+    position: absolute;
+    flex-flow: row wrap;
+    justify-content: center;
+    width: 100%;
+}
+.Hero-section .slider-control .slider-dots span{
+    height: 10px;
+    width: 10px;
+    padding: 0px;
+    border-radius: 50%;
+    border: none;
+    background-color: lightgray;
+}
+.Hero-section .slider-control .slider-dots .active{
+    height: 10px;
+    width: 30px;
+    padding: 0px;
+    border-radius: 15px;
+    border: none;
+    background-color: white;
+}
+
+.Hero-section .slider-control .fa-arrow-left-long{
+    position: absolute;
+    top: 50%;
+    left: 0;
+    padding: 0px 10px;
+    transform: translateY(-50%)
+
+}
+.Hero-section .slider-control .fa-arrow-right-long{
+    position: absolute;
+    top: 50%;
+    right: 0;
+    padding: 0px 10px;
+}
+

@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        // strong number (addition of factorial 2= 2*1  ,)
+        let num = Number(prompt("give the number: "));
+        let sum = 0;
+        let check = num;
+
+
+        while (num > 0) {
+            let digits = num % 10
+            let fact = 1;
+            for (let i = digits; i > 0; i--) {
+                fact = fact * i;
+            }
+            sum = sum + fact;
+            num = parseInt(num / 10);
+
+        }
+        if (sum == check) {
+            console.log("strong number.")
+        }
+        else{
+            console.log("not strong number.")
+        }
+
+
+
+
+    </script>
+</body>
+
+</html>

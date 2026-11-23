@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        // print the first 3 smallest prime numbers 
+
+        let smallest = Infinity;
+        let secondsmallest = Infinity;
+        let thirdsmallest = Infinity;
+         for( let num = 1 ; num<=100 ; num++){
+            if(num==1) continue ;
+            let prime = true; 
+            for (let i = 2; i <= parseInt(num/2) ; i++) {
+                if (num % i == 0) {
+                    prime = false;
+                    break;
+                }
+            }
+            if (prime){
+                smallest = secondsmallest;
+                secondsmallest = thirdsmallest;
+                thirdsmallest = num;
+                if(smallest!==Infinity){
+                    break;
+                }
+            } 
+            
+        }
+        console.log(`samllest : ${smallest} , second samllest: ${secondsmallest} and third largest: ${thirdsmallest}`)
+    </script>
+</body>
+</html>
