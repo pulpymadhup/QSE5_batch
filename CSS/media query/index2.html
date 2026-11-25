@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            padding: 0;
+            margin: 0;
+        }
+        .logo{
+            margin: 10px;
+            padding: 20px;
+            width: 50px;
+        }
+        .item{
+            width: 200px;
+            height: 200px;
+            background-color: lightgreen;
+            border: 1px solid black;
+        }
+        .container-items{
+            display: flex;
+            flex-flow: wrap row;           
+            gap: 10px;
+            padding: 10px;
+        }
+        @media (min-width:320px) and (max-width:570px){
+            .container-items{
+            display: flex;
+            flex-flow: wrap column;
+            
+        }
+        .item{
+            width: 320px;
+            height: 200px;
+            background-color: lightsalmon;
+            border: 1px solid black;
+        }
+        }
+        @media (min-width:571px) and (max-width:799px){
+            .item{
+            width: 350px;
+            height: 200px;
+            background-color: lightcoral;
+            border: 1px solid black;
+        }
+        }
+
+    </style>
+</head>
+<body>
+    <div class="logo">
+        <img src="https://cdn.prod.website-files.com/63661389dd2417f19a0d89d3/636a2cb5715eea61d64a3119_logo.svg" alt="">
+    </div>
+    <div class="container">
+        <div class="container-items">
+            <div class="item-1 item"></div>
+            <div class="item-2 item"></div>
+            <div class="item-3 item"></div>
+            <div class="item-4 item"></div>
+            <div class="item-5 item"></div>
+            <div class="item-6 item"></div>
+            <div class="item-7 item"></div>
+            <div class="item-8 item"></div>
+            <div class="item-9 item"></div>
+            <div class="item-10 item"></div>
+            <div class="item-11 item"></div>
+            <div class="item-12 item"></div>
+            <div class="item-13 item"></div>
+            <div class="item-14 item"></div>
+            <div class="item-15 item"></div>
+            <div class="item-16 item"></div>
+            <div class="item-17 item"></div>
+            <div class="item-18 item"></div>
+            <div class="item-19 item"></div>
+            <div class="item-20 item"></div>
+        </div>
+    </div>
+</body>
+</html>

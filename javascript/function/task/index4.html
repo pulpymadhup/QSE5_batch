@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        // Write a function to check whether a number is prime.
+        let num = Number(prompt("Give the number : "));
+
+        let checkPrime = (a) =>{
+            let prime = true;
+            if(a == 1 ){
+                prime = false;
+            }
+            for(let i = 2 ; i<=parseInt(a/2) ; i++){
+                if(a%i==0){
+                    prime = false;
+                    break;
+                }
+            }
+            if(prime){
+                console.log(`${a} is prime.`)
+            }
+            else{
+                console.log(`${a} is not prime.`)
+            }
+            
+        }
+        checkPrime(num);
+    </script>
+</body>
+</html>
