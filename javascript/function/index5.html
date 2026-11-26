@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        console.log("---------------------Fn declattion----------------");
+        function isEven(n){
+            if(n%2==0){
+                console.log(`${n} is Even.`) 
+            }
+            else{
+                console.log(`${n} is odd.`)
+            }
+        }
+        isEven(7);
+
+        console.log("---------------------Fn exp----------------");
+
+        let product = function(n1,n2){
+            console.log(n1*n2);
+        }
+        product(4,9);
+
+        console.log("---------------------Arrow fn-----------------")
+
+        let displayDetails = (name , age , course , city) =>{
+            console.log(`Display user data- user nsme ${name}, age: ${age}, city: ${city}.`)
+        }
+        displayDetails("shubham",24,"Mern","blr");
+    </script>
+</body>
+</html>

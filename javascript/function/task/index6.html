@@ -7,6 +7,19 @@
 </head>
 <body>
     <!-- Write a function to reverse a number. -->
+     <script>
+        let revfunc = (a) =>{
+            let num = a;
+            let rev = 0 ;
+            while(num>0){
+                rev = num%10 + rev*10;
+                num = parseInt(num/10);
+            }
+            console.log(a)
+            console.log(rev)
+     }
+     revfunc(543);
+     </script>
      
     
 </body>
